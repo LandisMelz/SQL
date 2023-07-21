@@ -1,0 +1,23 @@
+CREATE TABLE Rasmaths_Coil (id INTEGER PRIMARY KEY, name TEXT, rarity TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO Rasmaths_Coil VALUES (1, "Irodguards's Travelling Boots", "Rare", 2, 1000);
+INSERT INTO Rasmaths_Coil VALUES (2, "Everburning Lantern", "Uncommon", 3, 350);
+INSERT INTO Rasmaths_Coil VALUES (3, "Beads of Attraction", "Rare", 2, 350);
+INSERT INTO Rasmaths_Coil VALUES (4, "False Light Torch", "Rare", 1, 270);
+INSERT INTO Rasmaths_Coil VALUES (5, "Shatter Stone Grenade", "Uncommon", 8, 80);
+INSERT INTO Rasmaths_Coil VALUES (6, "Needle of Mending", "Rare", 1, 1100);
+INSERT INTO Rasmaths_Coil VALUES (7, "Cloak of Shelving", "Rare", 1, 400);
+INSERT INTO Rasmaths_Coil VALUES (8, "Potion of Healing", "Common", 4, 50);
+INSERT INTO Rasmaths_Coil VALUES (9, "Potion of Greater Healing", "Uncommon", 2, 150);
+INSERT INTO Rasmaths_Coil VALUES (10, "Potion of Fire Breath", "Uncommon", 1, 150);
+INSERT INTO Rasmaths_Coil VALUES (11, "Potion of Climbing", "Uncommon", 2, 80);
+INSERT INTO Rasmaths_Coil VALUES (12, "Ring of Swimming", "Rare", 1, 300);
+INSERT INTO Rasmaths_Coil VALUES (13, "Ring of Mind Shielding", "Rare", 1, 900);
+INSERT INTO Rasmaths_Coil VALUES (14, "Silver Raven", "Rare", 2, 500);
+INSERT INTO Rasmaths_Coil VALUES (15, "Long Sword of Wounding", "Rare", 1, 600);
+
+--display the database ordered by price
+SELECT * FROM Rasmaths_Coil ORDER BY price;
+
+--what is the cost of the whole store?
+SELECT SUM(price) FROM Rasmaths_Coil;
